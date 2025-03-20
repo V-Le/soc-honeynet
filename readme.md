@@ -1,7 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic) 
 ![|960](images/250320T00-26-50-a1ae8e.jpg)
 
-
 ## 🛡️ Introduction 🛡️
 In this project, I constructed a mini honeynet in Azure, integrating log sources from various resources into a Log Analytics workspace. This data was utilized by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured security metrics in the initial, unsecured environment for 24 hours, then applied security controls to harden the environment, followed by another 24-hour measurement period. The results of these metrics, which are detailed below, demonstrate the impact of the applied security controls:
 
@@ -11,12 +10,11 @@ In this project, I constructed a mini honeynet in Azure, integrating log sources
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
-
 ## Architecture Before Hardening / Security Controls
 ![|960](images/250320T00-27-04-pf9ppo.jpg)
 
 ## Architecture After Hardening / Security Controls
-![](../Pasted%20image%2020250320002717.png)
+![|960](images/250320T00-48-01-eidmy0.jpg)
 
 **The architecture of the mini honeynet in Azure consists of the following components:**
 - Virtual Network (VNet)
@@ -42,18 +40,15 @@ In this project, I constructed a mini honeynet in Azure, integrating log sources
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
-For the "BEFORE" metrics, all resources were initially deployed with direct exposure to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access, and all other resources were deployed with public endpoints visible to the internet, rendering private endpoints unnecessary.
-
-In contrast, for the "AFTER" metrics, significant security enhancements were implemented. Network Security Groups were fortified by restricting ALL traffic except for access from designated admin workstations. Additionally, all other resources were shielded by their built-in firewalls and reinforced with the implementation of Private Endpoints.
-
+For the "BEFORE" metrics, all resources were initially deployed with direct exposure to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access, and all other resources were deployed with public endpoints visible to the internet, rendering private endpoints unnecessary.  
+  
+In contrast, for the "AFTER" metrics, significant security enhancements were implemented. Network Security Groups were fortified by restricting ALL traffic except for access from designated admin workstations. Additionally, all other resources were shielded by their built-in firewalls and reinforced with the implementation of Private Endpoints.  
 ## Azure Sentinel Before Hardening / Security Controls
-
 ![|1128](images/250319T23-51-53-td9sx3.jpg)
 
 ![|1661](images/250319T23-56-06-4e4kw1.jpg)
 
 ## Attack Maps Before Hardening / Security Controls
-
 ### windows-rdp-auth-fail (24 hour, Before hardening)
 ![|1314](images/250319T23-57-49-qkoyn8.jpg)
 
@@ -67,9 +62,9 @@ In contrast, for the "AFTER" metrics, significant security enhancements were imp
 ![](../Pasted%20image%2020250320002903.png)
 
 ## Metrics Before Hardening / Security Controls
-The following table displays the metrics we measured in the insecure environment for 24 hours:
-**Start Time February 23, 2025, 12:00:00 AM**
-**Stop Time February 24, 2025, 12:00:00 AM**
+The following table displays the metrics we measured in the insecure environment for 24 hours:  
+**Start Time February 23, 2025, 12:00:00 AM**  
+**Stop Time February 24, 2025, 12:00:00 AM**  
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -79,7 +74,7 @@ The following table displays the metrics we measured in the insecure environment
 | SecurityIncident         | 668
 | AzureNetworkAnalytics_CL | 6699
 ## MS Sentinel After Hardening / Security Controls
-Microsoft Sentinel is important for monitoring and securing cloud environments. It provides tools to detect and respond to security threats across the organization. By collecting and analyzing data, it helps identify potential issues and offers solutions to improve security. This tool helps protect sensitive information and ensures that the organization stays secure and compliant with industry standards.
+Microsoft Sentinel is important for monitoring and securing cloud environments. It provides tools to detect and respond to security threats across the organization. By collecting and analyzing data, it helps identify potential issues and offers solutions to improve security. This tool helps protect sensitive information and ensures that the organization stays secure and compliant with industry standards.  
 
 ![|1129](images/250320T00-03-51-d6i1ze.jpg)
 
@@ -88,21 +83,19 @@ Microsoft Sentinel is important for monitoring and securing cloud environments. 
 ## NIST 800-53 Cybersecurity Framework 
 ![|1939](images/250320T00-24-45-cvfitz.jpg)
 
-The NIST 800-53 framework is important for keeping organizations' information systems secure. It offers a set of guidelines to protect against various threats, helping organizations safeguard sensitive data and comply with regulations. By following these guidelines, organizations can identify and reduce risks, making their digital operations more secure and reliable.
-
+The NIST 800-53 framework is important for keeping organizations' information systems secure. It offers a set of guidelines to protect against various threats, helping organizations safeguard sensitive data and comply with regulations. By following these guidelines, organizations can identify and reduce risks, making their digital operations more secure and reliable.  
 ## MS Defender for Cloud After NIST SP 800 53 R5 Regulatory Compliance Application
 ![|1207](images/250320T00-24-24-wozggk.jpg)
 
-
-Microsoft Defender for Cloud is essential for keeping cloud environments secure. It helps manage security across different cloud services and protects against threats. By regularly checking the security of resources, it provides easy-to-follow recommendations and automates security practices. This tool ensures that sensitive data is protected and that the organization meets industry security standards, making cloud operations more reliable and secure.
+Microsoft Defender for Cloud is essential for keeping cloud environments secure. It helps manage security across different cloud services and protects against threats. By regularly checking the security of resources, it provides easy-to-follow recommendations and automates security practices. This tool ensures that sensitive data is protected and that the organization meets industry security standards, making cloud operations more reliable and secure.  
 
 <img width="1494" alt="NIST" src="https://github.com/TerikaJ/Soc-Honeynet/assets/136477450/a4d2969e-130e-4b4e-9e86-92b566c24dc6">
 
 <img width="1340" alt="MS Defender" src="https://github.com/TerikaJ/Soc-Honeynet/assets/136477450/283e2ef2-bbbb-4201-9a52-10a8dd1b287f">
 
 ## Attack Maps After Hardening / Security Controls
-**Start Time March 17, 2025, 12:00:00 AM**
-**Stop Time March 18, 2025, 12:00:00 AM**
+**Start Time March 17, 2025, 12:00:00 AM**  
+**Stop Time March 18, 2025, 12:00:00 AM  **
 ### windows-rdp-auth-fail (24 hour, After hardening)
 ![|1291](images/250320T00-10-49-ypxmdn.jpg)
 
