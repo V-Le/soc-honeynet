@@ -59,7 +59,7 @@ In contrast, for the "AFTER" metrics, significant security enhancements were imp
 ![|1271](images/250320T00-28-52-hi627k.jpg)
 
 ### nsg-malicious-allowed-in (24 hour, Before hardening)
-![|1265](images/250320T01-19-54-2qzc1w.jpg)
+![|1314](images/250320T01-25-52-6cxtm3.jpg)
 
 ## Metrics Before Hardening / Security Controls
 The following table displays the metrics we measured in the insecure environment for 24 hours:  
