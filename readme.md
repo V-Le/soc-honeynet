@@ -1,43 +1,30 @@
-# (CURRENTLY IN PROGRESS) Building a SOC + Honeynet in Azure (Live Traffic) 
-![68747470733a2f2f692e696d6775722e636f6d2f5a5778653033652e6a7067](https://github.com/TerikaJ/Soc-Honeynet/assets/136477450/bc037cb5-677a-41b6-9389-724559b80b06)
+<h1>Hi, I'm Victor!🧑🏽‍💻 <br><a href="https://www.linkedin.com/in/VictorLe-/">Cyber Security Analyst</a> :cloud: :lock: :key: :shield: </h1>
 
+<h2>:lock: Cybersecurity Projects:</h2>
+<img src="https://i.imgur.com/1DDZ4Ui.png" height="5%" width="15%" alt="Microsoft Azure"/>
 
-## 🛡️ Introduction 🛡️
-In this project, I constructed a mini honeynet in Azure, integrating log sources from various resources into a Log Analytics workspace. This data was utilized by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured security metrics in the initial, unsecured environment for 24 hours, then applied security controls to harden the environment, followed by another 24-hour measurement period. The results of these metrics, which are detailed below, demonstrate the impact of the applied security controls:
+Implementing a Security Operations Center (SOC) / Honeynet from scratch using Microsoft Azure
+  - [**(UPDATING)** Building and Configuring a LIVE SOC / Honeynet using Azure](https://github.com/V-Le/soc-honeynet)
 
-**The metrics we will show are:**
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+---
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+<img src="https://i.imgur.com/aqmclVY.jpeg" height="5%" width="15%" alt="VirtualBox"/>
 
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+Deploying OpenVAS vulnerability management in VirtualBox
+- [Scanning VM for Vulnerabilities with OpenVAS using VirtualBox](https://github.com/V-Le/OpenVAS-Scanning-Lab)
 
-**The architecture of the mini honeynet in Azure consists of the following components:**
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
+<h2>🧑🏽‍💻 Frontend & Programming Projects:</h2>
 
-**Technologies, Azure Components, and Regulations Employed**
-- Azure Virtual Network (VNet)
-- Azure Network Security Groups (NSG)
-- Virtual Machines (2 Windows VMs, 1 Linux VM)
-- Log Analytics Workspace with Kusto Query Language (KQL) Queries
-- Azure Key Vault for Secure Secrets Management
-- Azure Storage Account for Data Storage
-- Microsoft Sentinel for Security Information and Event Management (SIEM)
-- Microsoft Defender for Cloud to Protect Cloud Resources
-- Windows Remote Desktop for Remote Access
-- Command Line Interface (CLI) for System Management
-- PowerShell for Automation and Configuration Management
-- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
-- [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
+  - [Validation Form](https://github.com/V-Le/validation-form) [Demo](https://v-le.github.io/validation-form/)
+  - [Book Library](https://github.com/V-Le/book-library) [Demo](https://v-le.github.io/book-library/)
+  - [Todo List](https://github.com/V-Le/todo-list) [Demo](https://v-le.github.io/todo-list/)
+  - [Etch-a-Sketch](https://github.com/V-Le/etch-a-sketch) [Demo](https://v-le.github.io/etch-a-sketch/)
+  - [Tic-Tac-Toe Game](https://github.com/V-Le/tictactoe) [Demo](https://v-le.github.io/tictactoe/)
+  - [Python Coding](https://github.com/V-Le/Coding-Puzzle-Practices)
+  - [Recreate Google Homepage](https://github.com/V-Le/google-homepage) [Demo](https://v-le.github.io/google-homepage/)
+
+<h2> 🤳 Connect with me! </h2>
+
+[<img align="left" alt="Victor | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+
+[linkedin]: https://www.linkedin.com/in/VictorLe-/
